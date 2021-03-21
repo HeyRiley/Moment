@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Random Number Game</title>
+    <meta charset="UTF-8" />
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        input[type="range"] {
+            display: block;
+        }
+
+        input[type="number"] {
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Random Number Game</h1>
+    <h3 class="js-title">Generate a number between 0 and <span>5</span></h3>
+    <input class="js-range" type="range" min="5" max="200" step="1" value="5" />
+    <form class="js-randForm" action="">
+        <label>Guess the number: </label>
+        <input type="number" min="5" max="200" />
+        <input type="submit" value="play!" />
+    </form>
+
+    <h3 class="js-result"></h3>
+
+    <script src="js/randomNum.js"></script>
+</body>
+
+</html>

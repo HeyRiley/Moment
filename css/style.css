@@ -1,0 +1,156 @@
+/* max-width: 100vw;
+max-height: 100vh; */
+
+.wrap {
+  margin: 5rem auto;
+  width: 60%;
+  height: 60%;
+  text-align: center;
+  background-color: teal;
+  opacity: 0.8;
+}
+
+body {
+  /* background-color: #ecf0f1; */
+  background-color: #34495e;
+  margin: 0;
+  /* overflow: hidden; 화면 스크롤없이 고정 => toDo 길어지면 짤림.. */
+}
+
+h1 {
+  /* color: #34495e; */
+  color: white;
+  transition: color 0.5s ease-in-out;
+}
+
+#title {
+  font-size: 75px;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.clicked {
+  color: #7f8c8d;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.js-clock {
+  font-size: 100px;
+}
+.js-clock h1 {
+  padding-top: 2rem;
+  margin: 5rem 0 0 0;
+}
+
+.js-toDoList {
+  padding: 3rem 6rem;
+  text-align: left;
+  font-size: x-large;
+}
+
+.js-weather {
+  position: fixed;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.js-navigator {
+  position: fixed;
+  top: 2rem;
+  left: 1.5rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.showing {
+  display: block;
+  color: white;
+  list-style: none;
+}
+
+.transparent {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+/* placeholder */
+input[type="text"] {
+  color: white;
+  text-align: center;
+  border-bottom: white solid;
+  width: 60%;
+  font-size: x-large;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
+}
+
+/* bg Image */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 1s linear;
+}
+
+/* nav */
+.nav-icon {
+  position: fixed;
+  top: 70px;
+  left: 25px;
+  padding: 1rem;
+  margin: 0.7rem 0;
+  height: 300px;
+  width: 175px;
+  background-color: white;
+  opacity: 0.8;
+  border-radius: 10px;
+  list-style: none;
+}
+
+.navigator {
+  display: none;
+}
+
+.link-icon {
+  margin: 1rem auto;
+}
+.link-icon a {
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
